@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/PaginaEntrar/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Botão</title>
 </head>
 <body>
-    
+
     <script src="index.js"></script>
 
-    <div class="form">
-        <form>
-            <h3>Login</h3>
-            <input type="email" placeholder="Digite seu email:" id="email" required>
-            <input type="password" placeholder="Digite sua senha:" id="senha" required>
-            <input type="submit" onclick="login()" return: false>
-        </form>
+    <div id="form-center">
+        <div class="form">
+            <form id="form-login">
+                <h3>Login</h3>
+                <div class="input-box">
+                    <input type="email" placeholder="Digite seu email:" id="email" required>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Digite sua senha:" id="senha" required>
+                </div>
+                <div class="input-box">
+                    <input type="submit" onclick="return login();">
+                </div>
+            </form>
+        </div>
     </div>
 
 </body>
